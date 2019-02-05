@@ -1,0 +1,22 @@
+version: 1.0
+released: 2012-11-30
+message: Hello World!
+# Connection parameters
+connection:
+    url: jdbc:mysql://localhost:3306/db
+    poolSize: 5
+
+# Protocols
+protocols:
+   - http
+   - https
+
+# Users
+users:
+    tom: passwd
+    bob: passwd
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:2761/eureka/
